@@ -4,6 +4,8 @@ import type React from "react"
 import { Space_Grotesk, Syncopate } from "next/font/google"
 import NoiseOverlay from "@/components/NoiseOverlay"
 import CustomCursor from "@/components/CustomCursor"
+import Navbar from "@/components/Navbar"
+import Footer from "@/components/Footer"
 import Script from "next/script"
 
 // Define fonts
@@ -106,7 +108,9 @@ export default function RootLayout({
       </head>
       <body className="bg-background text-foreground">
         <NoiseOverlay />
-        {children}
+        <Navbar />
+        <main className="min-h-screen">{children}</main>
+        <Footer />
         <CustomCursor />
 
         {/* Structured data for SEO */}

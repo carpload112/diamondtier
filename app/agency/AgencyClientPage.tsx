@@ -6,7 +6,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { CheckCircle, Users, Award, Target, Lightbulb } from "lucide-react"
 
-export default function AgencyPage() {
+export default function AgencyClientPage() {
   const targetRef = useRef(null)
   const { scrollYProgress } = useScroll({
     target: targetRef,

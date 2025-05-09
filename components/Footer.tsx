@@ -73,33 +73,33 @@ export default function Footer() {
       <div className="grid-bg" />
       <div className="absolute inset-0 noise-bg" />
 
-      <div className="container mx-auto px-3 relative z-10">
-        <div className="py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="container mx-auto px-4 relative z-10">
+        <div className="py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
-            <div className="mb-4">
+            <div className="mb-6">
               <Image
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Diamond-Tier-Inverted-Color-2400x1800-3-1024x768-kC0UNo9ToKek1cV72cw2aDelalBEv2.png"
                 alt="Diamond Tier Agency"
-                width={120}
-                height={90}
+                width={150}
+                height={112}
                 className="h-auto w-auto"
               />
             </div>
-            <p className="text-white/60 text-[10px] font-light mb-3">
+            <p className="text-white/60 text-xs font-light mb-4">
               Elevating brands through innovation, strategy, and cutting-edge technology solutions.
             </p>
-            <div className="flex space-x-3">
+            <div className="flex space-x-4">
               <a href="#" className="text-white/40 hover:text-primary transition-colors duration-300 hoverable">
-                <Facebook className="w-4 h-4" />
+                <Facebook className="w-5 h-5" />
               </a>
               <a href="#" className="text-white/40 hover:text-primary transition-colors duration-300 hoverable">
-                <Twitter className="w-4 h-4" />
+                <Twitter className="w-5 h-5" />
               </a>
               <a href="#" className="text-white/40 hover:text-primary transition-colors duration-300 hoverable">
-                <Instagram className="w-4 h-4" />
+                <Instagram className="w-5 h-5" />
               </a>
               <a href="#" className="text-white/40 hover:text-primary transition-colors duration-300 hoverable">
-                <Linkedin className="w-4 h-4" />
+                <Linkedin className="w-5 h-5" />
               </a>
             </div>
           </motion.div>
@@ -109,12 +109,12 @@ export default function Footer() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            <h4 className="text-[10px] uppercase tracking-wider text-primary mb-3 font-heading">Navigation</h4>
-            <ul className="space-y-2">
+            <h4 className="text-xs uppercase tracking-wider text-primary mb-4 font-heading">Navigation</h4>
+            <ul className="space-y-4">
               <li>
                 <Link
                   href="/services"
-                  className="text-white/60 hover:text-primary transition-colors duration-300 text-[10px] font-light hoverable group"
+                  className="text-white/60 hover:text-primary transition-colors duration-300 text-xs font-light hoverable group"
                 >
                   <span className="relative">
                     Services
@@ -125,7 +125,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/work"
-                  className="text-white/60 hover:text-primary transition-colors duration-300 text-[10px] font-light hoverable group"
+                  className="text-white/60 hover:text-primary transition-colors duration-300 text-xs font-light hoverable group"
                 >
                   <span className="relative">
                     Work
@@ -136,7 +136,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/agency"
-                  className="text-white/60 hover:text-primary transition-colors duration-300 text-[10px] font-light hoverable group"
+                  className="text-white/60 hover:text-primary transition-colors duration-300 text-xs font-light hoverable group"
                 >
                   <span className="relative">
                     About
@@ -147,7 +147,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/contact"
-                  className="text-white/60 hover:text-primary transition-colors duration-300 text-[10px] font-light hoverable group"
+                  className="text-white/60 hover:text-primary transition-colors duration-300 text-xs font-light hoverable group"
                 >
                   <span className="relative">
                     Contact
@@ -158,7 +158,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/privacy-policy"
-                  className="text-white/60 hover:text-primary transition-colors duration-300 text-[10px] font-light hoverable group"
+                  className="text-white/60 hover:text-primary transition-colors duration-300 text-xs font-light hoverable group"
                 >
                   <span className="relative">
                     Privacy Policy
@@ -169,7 +169,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/terms"
-                  className="text-white/60 hover:text-primary transition-colors duration-300 text-[10px] font-light hoverable group"
+                  className="text-white/60 hover:text-primary transition-colors duration-300 text-xs font-light hoverable group"
                 >
                   <span className="relative">
                     Terms & Conditions
@@ -185,9 +185,9 @@ export default function Footer() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <h4 className="text-[10px] uppercase tracking-wider text-primary mb-3 font-heading">Contact</h4>
-            <ul className="space-y-2">
-              <li className="flex items-center text-white/60 text-[10px] font-light">
+            <h4 className="text-xs uppercase tracking-wider text-primary mb-4 font-heading">Contact</h4>
+            <ul className="space-y-4">
+              <li className="flex items-center text-white/60 text-xs font-light">
                 <Mail className="w-3 h-3 mr-2 text-primary" />
                 <a
                   href="mailto:info@diamondtier.solutions"
@@ -196,14 +196,14 @@ export default function Footer() {
                   info@diamondtier.solutions
                 </a>
               </li>
-              <li className="flex items-center text-white/60 text-[10px] font-light">
-                <Phone className="w-3 h-3 mr-2 text-primary" />
+              <li className="flex items-center text-white/60 text-sm font-light">
+                <Phone className="w-4 h-4 mr-3 text-primary" />
                 <a href="tel:+13059223379" className="hover:text-primary transition-colors duration-300 hoverable">
                   (305) 922-3379
                 </a>
               </li>
-              <li className="flex items-start text-white/60 text-[10px] font-light">
-                <MapPin className="w-3 h-3 mr-2 text-primary mt-1" />
+              <li className="flex items-start text-white/60 text-sm font-light">
+                <MapPin className="w-4 h-4 mr-3 text-primary mt-1" />
                 <div>
                   <p>1501 Biscayne Blvd Suite 501</p>
                   <p>Miami, FL 33132</p>
@@ -217,45 +217,45 @@ export default function Footer() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
           >
-            <h4 className="text-[10px] uppercase tracking-wider text-primary mb-3 font-heading">Subscribe</h4>
-            <p className="text-white/60 text-[10px] font-light mb-2">Stay updated with our latest insights and news</p>
-            <form className="flex flex-col space-y-3" onSubmit={handleSubscribe}>
+            <h4 className="text-xs uppercase tracking-wider text-primary mb-4 font-heading">Subscribe</h4>
+            <p className="text-white/60 text-xs font-light mb-3">Stay updated with our latest insights and news</p>
+            <form className="flex flex-col space-y-4" onSubmit={handleSubscribe}>
               <input
                 type="email"
                 placeholder="Your email address"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
-                className="bg-white/5 border border-white/10 text-white px-3 py-1.5 rounded-md focus:outline-none focus:border-primary transition-colors duration-300 text-xs"
+                className="bg-white/5 border border-white/10 text-white px-4 py-2 rounded-md focus:outline-none focus:border-primary transition-colors duration-300 text-sm"
               />
-              <button type="submit" className="neon-button text-xs" disabled={subscribeStatus.submitting}>
+              <button type="submit" className="neon-button text-sm" disabled={subscribeStatus.submitting}>
                 <span>{subscribeStatus.submitting ? "Subscribing..." : "Subscribe"}</span>
               </button>
 
               {subscribeStatus.success && (
-                <div className="flex items-center text-primary text-[10px] mt-1">
-                  <CheckCircle className="w-3 h-3 mr-1" />
+                <div className="flex items-center text-primary text-sm mt-2">
+                  <CheckCircle className="w-4 h-4 mr-2" />
                   <span>Successfully subscribed!</span>
                 </div>
               )}
 
-              {subscribeStatus.error && <div className="text-red-500 text-[10px] mt-1">{subscribeStatus.error}</div>}
+              {subscribeStatus.error && <div className="text-red-500 text-sm mt-2">{subscribeStatus.error}</div>}
             </form>
           </motion.div>
         </div>
 
-        <div className="py-4 border-t border-white/5 text-center">
-          <p className="text-white/40 text-[10px] font-light">
+        <div className="py-8 border-t border-white/5 text-center">
+          <p className="text-white/40 text-xs font-light">
             &copy; {currentYear} Diamond Tier Agency. All rights reserved.
           </p>
-          <div className="flex justify-center mt-2 space-x-3">
+          <div className="flex justify-center mt-4 space-x-4">
             <Link
               href="/privacy-policy"
-              className="text-white/40 hover:text-primary text-[10px] transition-colors duration-300"
+              className="text-white/40 hover:text-primary text-xs transition-colors duration-300"
             >
               Privacy Policy
             </Link>
-            <Link href="/terms" className="text-white/40 hover:text-primary text-[10px] transition-colors duration-300">
+            <Link href="/terms" className="text-white/40 hover:text-primary text-xs transition-colors duration-300">
               Terms & Conditions
             </Link>
           </div>

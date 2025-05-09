@@ -37,10 +37,10 @@ export default function Navbar() {
     <>
       <nav
         className={`fixed w-full z-50 transition-all duration-300 ${
-          isScrolled ? "py-2 bg-background/90 backdrop-blur-sm border-b border-primary/5" : "py-2"
+          isScrolled ? "py-3 bg-background/90 backdrop-blur-sm border-b border-primary/5" : "py-5"
         }`}
       >
-        <div className="container mx-auto px-3">
+        <div className="container mx-auto px-4">
           <div className="flex items-center justify-between">
             <Link href="/" className="relative z-50 hoverable">
               <Image
@@ -48,19 +48,19 @@ export default function Navbar() {
                 alt="Diamond Tier Agency"
                 width={120}
                 height={90}
-                className="w-16 h-auto transition-transform duration-300 hover:scale-105 drop-shadow-[0_0_12px_rgba(0,255,204,0.4)]"
+                className="w-20 h-auto transition-transform duration-300 hover:scale-105 drop-shadow-[0_0_12px_rgba(0,255,204,0.4)]"
                 priority
               />
             </Link>
 
             {/* Desktop Menu */}
             <div className="hidden md:flex items-center">
-              <div className="flex items-center space-x-5 mr-4">
+              <div className="flex items-center space-x-8 mr-6">
                 {navItems.map((item) => (
                   <Link
                     key={item.name}
                     href={item.path}
-                    className={`text-[10px] tracking-wider relative group hoverable ${
+                    className={`text-xs tracking-wider relative group hoverable ${
                       pathname === item.path ? "text-primary" : "text-white/80 hover:text-white"
                     }`}
                   >
@@ -78,7 +78,7 @@ export default function Navbar() {
                 href="https://calendly.com/diamondtiersolutions/discovery"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[10px] tracking-wider text-primary border border-primary px-4 py-2 hover:bg-primary/10 transition-colors duration-300"
+                className="text-xs tracking-wider text-primary border border-primary px-6 py-3 hover:bg-primary/10 transition-colors duration-300"
               >
                 SCHEDULE
               </a>
@@ -99,7 +99,7 @@ export default function Navbar() {
                     exit={{ opacity: 0 }}
                     transition={{ duration: 0.2 }}
                   >
-                    <X size={18} />
+                    <X size={20} />
                   </motion.div>
                 ) : (
                   <motion.div
@@ -109,7 +109,7 @@ export default function Navbar() {
                     exit={{ opacity: 0 }}
                     transition={{ duration: 0.2 }}
                   >
-                    <Menu size={18} />
+                    <Menu size={20} />
                   </motion.div>
                 )}
               </AnimatePresence>
@@ -126,10 +126,10 @@ export default function Navbar() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.2 }}
-            className="fixed inset-0 bg-background/95 backdrop-blur-sm z-40 md:hidden flex flex-col pt-20"
+            className="fixed inset-0 bg-background/95 backdrop-blur-sm z-40 md:hidden flex flex-col pt-24"
           >
             <div className="flex flex-col items-center h-full">
-              <div className="w-full border-b border-white/10 py-4">
+              <div className="w-full border-b border-white/10 py-6">
                 {navItems.map((item, index) => (
                   <motion.div
                     key={item.name}
@@ -139,7 +139,7 @@ export default function Navbar() {
                   >
                     <Link
                       href={item.path}
-                      className={`block text-center py-3 text-xs ${
+                      className={`block text-center py-4 text-sm ${
                         pathname === item.path ? "text-primary" : "text-white/80"
                       }`}
                       onClick={() => setIsMenuOpen(false)}
@@ -150,7 +150,7 @@ export default function Navbar() {
                 ))}
               </div>
               <motion.div
-                className="mt-6"
+                className="mt-8"
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.3, delay: 0.3 }}
@@ -159,7 +159,7 @@ export default function Navbar() {
                   href="https://calendly.com/diamondtiersolutions/discovery"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[10px] tracking-wider text-primary border border-primary px-4 py-2 hover:bg-primary/10 transition-colors duration-300"
+                  className="text-xs tracking-wider text-primary border border-primary px-6 py-3 hover:bg-primary/10 transition-colors duration-300"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   SCHEDULE A CALL

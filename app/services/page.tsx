@@ -3,7 +3,7 @@
 import Navbar from "@/components/Navbar"
 import Footer from "@/components/Footer"
 import { motion } from "framer-motion"
-import { Palette, Code, TrendingUp, DollarSign, Smartphone, Server, Users, BarChart } from "lucide-react"
+import { Palette, Code, TrendingUp, DollarSign, Smartphone, Server, Briefcase, BarChart } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 
@@ -63,7 +63,7 @@ const services = [
       "https://sjc.microlink.io/NeJE2f1kQ6WQi4dG6IMrbFR1l1iObnSQPNGPlfropN8dSooVdtF3lfrdTx6aAlkHGLnlTnuaqmBjP7x9Dx657w.jpeg",
   },
   {
-    icon: Users,
+    icon: Briefcase,
     title: "Sweat Equity Partnerships",
     slug: "sweat-equity",
     description: "Offering strategic collaboration and development support in exchange for equity in select projects.",
