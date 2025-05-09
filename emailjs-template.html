@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Diamond Tier Agency - {{message_type}}</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            background-color: #000000;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px 8px 0 0;
+        }
+        .logo {
+            max-width: 200px;
+            margin-bottom: 10px;
+        }
+        .content {
+            padding: 20px;
+        }
+        .field {
+            margin-bottom: 15px;
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-radius: 4px;
+            border-left: 3px solid #00ffcc;
+        }
+        .field-label {
+            font-weight: bold;
+            color: #666;
+            margin-bottom: 5px;
+            display: block;
+        }
+        .field-value {
+            color: #333;
+        }
+        .thank-you {
+            text-align: center;
+            background-color: rgba(0, 255, 204, 0.1);
+            padding: 20px;
+            border-radius: 4px;
+            margin: 20px 0;
+        }
+        .button {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #00ffcc;
+            color: #000000;
+            text-decoration: none;
+            border-radius: 4px;
+            margin: 5px;
+            font-weight: bold;
+        }
+        .call-button {
+            background-color: #ff3366;
+            color: #ffffff;
+        }
+        .actions {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .footer {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            color: #999;
+            font-size: 12px;
+        }
+        @media only screen and (max-width: 600px) {
+            .container {
+                width: 100%;
+                border-radius: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Diamond-Tier-Inverted-Color-2400x1800-3-1024x768-kC0UNo9ToKek1cV72cw2aDelalBEv2.png" alt="Diamond Tier Agency" class="logo">
+        </div>
+        
+        <div class="content">
+            <div class="field">
+                <span class="field-label">Message Type:</span>
+                <div class="field-value">{{message_type}}</div>
+            </div>
+            
+            <div class="field">
+                <span class="field-label">Name:</span>
+                <div class="field-value">{{from_name}}</div>
+            </div>
+            
+            <div class="field">
+                <span class="field-label">Email:</span>
+                <div class="field-value">{{from_email}}</div>
+            </div>
+            
+            <div class="field">
+                <span class="field-label">Submission Time:</span>
+                <div class="field-value">{{submission_time}}</div>
+            </div>
+            
+            {{#if from_phone}}
+            <div class="field">
+                <span class="field-label">Phone:</span>
+                <div class="field-value">{{from_phone}}</div>
+            </div>
+            {{/if}}
+            
+            <div class="field">
+                <span class="field-label">Message:</span>
+                <div class="field-value">{{message}}</div>
+            </div>
+            
+            {{#if subscription_type}}
+            <div class="field">
+                <span class="field-label">Subscription Type:</span>
+                <div class="field-value">{{subscription_type}}</div>
+            </div>
+            {{/if}}
+            
+            <div class="thank-you">
+                <h2>Thank you for reaching out to Diamond Tier Agency!</h2>
+                <p>We'll get back to you as soon as possible.</p>
+            </div>
+            
+            {{#if from_phone}}
+            <div class="actions">
+                <a href="mailto:{{from_email}}" class="button">Reply to Message</a>
+                <a href="tel:{{from_phone}}" class="button call-button">Call Now</a>
+            </div>
+            {{/if}}
+        </div>
+        
+        <div class="footer">
+            <p>This is an automated message from your website.</p>
+            <p>&copy; 2025 Diamond Tier Agency. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
